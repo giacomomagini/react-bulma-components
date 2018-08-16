@@ -1,0 +1,1 @@
+{"version":3,"file":"static/preview.cf0bac975fb89b70f471.bundle.js","sources":["webpack:///./src/components/heading/index.js"],"sourcesContent":["import './heading.sass';\n\nexport { default } from './heading';\n"],"mappings":"AAEA","sourceRoot":""}
