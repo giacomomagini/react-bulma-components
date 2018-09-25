@@ -5,6 +5,7 @@ import CONSTANTS from '../../constants';
 import Column from './components/column';
 import COLUMN_CONSTANTS from './constants';
 import modifiers from '../../modifiers';
+import styles from "./columns.sass";
 
 const breakpoints = [null].concat(Object.keys(CONSTANTS.BREAKPOINTS).map(key => CONSTANTS.BREAKPOINTS[key]));
 
@@ -21,7 +22,7 @@ const Columns = ({
   return (
     <div
       {...props}
-      className={classNames(className, modifiers.classnames(allProps), 'columns', {
+      className={classNames(className, modifiers.classnames(allProps), styles.columns, {
         [`is-${breakpoint}`]: breakpoint,
         'is-gapless': gapless,
         'is-multiline': multiline,
